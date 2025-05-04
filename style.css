@@ -1,0 +1,43 @@
+/* ...existing code... */
+
+.table-container {
+    margin-top: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.question-col {
+    width: 40%;
+}
+
+.counter {
+    font-weight: bold;
+    color: #4a90e2;
+}

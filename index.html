@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Questionnaire</h1>
+    </header>
+    <main>
+        <div class="table-container">
+            <table id="appraisal-table">
+                <thead>
+                    <tr>
+                        <th class="question-col">Questions</th>
+                        <th>4 - Strongly Agree</th>
+                        <th>3 - Agree</th>
+                        <th>2 - Disagree</th>
+                        <th>1 - Strongly Disagree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5"><strong>A. Client Appraisal</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1. Client appraisal is a viable strategy for credit management.</td>
+                        <td><span class="counter" id="q1-4">0</span></td>
+                        <td><span class="counter" id="q1-3">0</span></td>
+                        <td><span class="counter" id="q1-2">0</span></td>
+                        <td><span class="counter" id="q1-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>2. The cooperative has competent personnel for carrying out client appraisal.</td>
+                        <td><span class="counter" id="q2-4">0</span></td>
+                        <td><span class="counter" id="q2-3">0</span></td>
+                        <td><span class="counter" id="q2-2">0</span></td>
+                        <td><span class="counter" id="q2-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>3. Client appraisal considers the character of the customers seeking credit facilities.</td>
+                        <td><span class="counter" id="q3-4">0</span></td>
+                        <td><span class="counter" id="q3-3">0</span></td>
+                        <td><span class="counter" id="q3-2">0</span></td>
+                        <td><span class="counter" id="q3-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>4. Aspect of collateral are considered while appraising clients.</td>
+                        <td><span class="counter" id="q4-4">0</span></td>
+                        <td><span class="counter" id="q4-3">0</span></td>
+                        <td><span class="counter" id="q4-2">0</span></td>
+                        <td><span class="counter" id="q4-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>5. Failure to assess customers capacity to repay results in loan.</td>
+                        <td><span class="counter" id="q5-4">0</span></td>
+                        <td><span class="counter" id="q5-3">0</span></td>
+                        <td><span class="counter" id="q5-2">0</span></td>
+                        <td><span class="counter" id="q5-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>6. Credit reports and statements of accounts are obtained from the client.</td>
+                        <td><span class="counter" id="q6-4">0</span></td>
+                        <td><span class="counter" id="q6-3">0</span></td>
+                        <td><span class="counter" id="q6-2">0</span></td>
+                        <td><span class="counter" id="q6-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>7. Reports for the compliance of the agreement and other monitoring tools for the management of the cooperative's loan portfolio is collected.</td>
+                        <td><span class="counter" id="q7-4">0</span></td>
+                        <td><span class="counter" id="q7-3">0</span></td>
+                        <td><span class="counter" id="q7-2">0</span></td>
+                        <td><span class="counter" id="q7-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><strong>B. Credit Risk Control</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1. Imposing loan size limits is a viable strategy in credit management.</td>
+                        <td><span class="counter" id="q8-4">0</span></td>
+                        <td><span class="counter" id="q8-3">0</span></td>
+                        <td><span class="counter" id="q8-2">0</span></td>
+                        <td><span class="counter" id="q8-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>2. The use of credit checks on regular basis enhances credit management.</td>
+                        <td><span class="counter" id="q9-4">0</span></td>
+                        <td><span class="counter" id="q9-3">0</span></td>
+                        <td><span class="counter" id="q9-2">0</span></td>
+                        <td><span class="counter" id="q9-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>3. Flexible repayment periods loan repayment.</td>
+                        <td><span class="counter" id="q10-4">0</span></td>
+                        <td><span class="counter" id="q10-3">0</span></td>
+                        <td><span class="counter" id="q10-2">0</span></td>
+                        <td><span class="counter" id="q10-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>4. Penalty for late payment enhances customers commitment to loan repayment.</td>
+                        <td><span class="counter" id="q11-4">0</span></td>
+                        <td><span class="counter" id="q11-3">0</span></td>
+                        <td><span class="counter" id="q11-2">0</span></td>
+                        <td><span class="counter" id="q11-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>5. The use of customer credit application forms improves monitoring and credit management as well.</td>
+                        <td><span class="counter" id="q12-4">0</span></td>
+                        <td><span class="counter" id="q12-3">0</span></td>
+                        <td><span class="counter" id="q12-2">0</span></td>
+                        <td><span class="counter" id="q12-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>6. Credit comittee's invovlement in making decision regarding loans are essential in reducing default/credit risk.</td>
+                        <td><span class="counter" id="q13-4">0</span></td>
+                        <td><span class="counter" id="q13-3">0</span></td>
+                        <td><span class="counter" id="q13-2">0</span></td>
+                        <td><span class="counter" id="q13-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>7. Interest rates charges affect performance of loans in the bank.</td>
+                        <td><span class="counter" id="q14-4">0</span></td>
+                        <td><span class="counter" id="q14-3">0</span></td>
+                        <td><span class="counter" id="q14-2">0</span></td>
+                        <td><span class="counter" id="q14-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><strong>C. Collection Policy</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1. Available collection policies have assisted towards effective credit management.</td>
+                        <td><span class="counter" id="q15-4">0</span></td>
+                        <td><span class="counter" id="q15-3">0</span></td>
+                        <td><span class="counter" id="q15-2">0</span></td>
+                        <td><span class="counter" id="q15-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>2. Formulation of collection policies have been a challenge in credit management.</td>
+                        <td><span class="counter" id="q16-4">0</span></td>
+                        <td><span class="counter" id="q16-3">0</span></td>
+                        <td><span class="counter" id="q16-2">0</span></td>
+                        <td><span class="counter" id="q16-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>3. Enforcement of guaranteed policies it provides chances for laon recovery in case of loan defaults.</td>
+                        <td><span class="counter" id="q17-4">0</span></td>
+                        <td><span class="counter" id="q17-3">0</span></td>
+                        <td><span class="counter" id="q17-2">0</span></td>
+                        <td><span class="counter" id="q17-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>4. Staff incentives are effective in imrpoving recovery of delinquent laons.</td>
+                        <td><span class="counter" id="q18-4">0</span></td>
+                        <td><span class="counter" id="q18-3">0</span></td>
+                        <td><span class="counter" id="q18-2">0</span></td>
+                        <td><span class="counter" id="q18-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>5. Regular review have been done on collection policies to improve state of credit management.</td>
+                        <td><span class="counter" id="q19-4">0</span></td>
+                        <td><span class="counter" id="q19-3">0</span></td>
+                        <td><span class="counter" id="q19-2">0</span></td>
+                        <td><span class="counter" id="q19-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>6. A stringent policy is more elective in debt recovery than a Lenient policy.</td>
+                        <td><span class="counter" id="q20-4">0</span></td>
+                        <td><span class="counter" id="q20-3">0</span></td>
+                        <td><span class="counter" id="q20-2">0</span></td>
+                        <td><span class="counter" id="q20-1">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>7. The cooperative regularly reviews its collection policy to ensure it aligns with best practices and legal requirements.</td>
+                        <td><span class="counter" id="q21-4">0</span></td>
+                        <td><span class="counter" id="q21-3">0</span></td>
+                        <td><span class="counter" id="q21-2">0</span></td>
+                        <td><span class="counter" id="q21-1">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="financial-table" class="mt-4">
+                <thead>
+                    <tr>
+                        <th class="question-col">Questions</th>
+                        <th>Choice 1</th>
+                        <th>Choice 2</th>
+                        <th>Choice 3</th>
+                        <th>Choice 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5"><strong>A. Stability</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1. What is the Cooperative's percentage range on their Liquidity for the previous financial reporting period?</td>
+                        <td><span class="counter" id="f1-1">0</span><br><small>100% to 150%</small></td>
+                        <td><span class="counter" id="f1-2">0</span><br><small>Above 150% to 300%/<br>Below 100% to 95%</small></td>
+                        <td><span class="counter" id="f1-3">0</span><br><small>Above 300% to 400%/<br>Below 95% to 90%</small></td>
+                        <td><span class="counter" id="f1-4">0</span><br><small>Above 400% to 500%/<br>Below 90% to 85%</small></td>
+                    </tr>
+                    <tr>
+                        <td>2. What is the Cooperative's percentage range of the Net Institutional Capital for the previous financial reporting period?</td>
+                        <td><span class="counter" id="f2-1">0</span><br><small>10% and above</small></td>
+                        <td><span class="counter" id="f2-2">0</span><br><small>7% to less than 10%</small></td>
+                        <td><span class="counter" id="f2-3">0</span><br><small>5% to less than 7%</small></td>
+                        <td><span class="counter" id="f2-4">0</span><br><small>3% to less than 5%</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><strong>B. Turnover Ratio</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1. What is the Cooperative's percentage range of the Loans Receivable Turnover for the previous financial reporting period?</td>
+                        <td><span class="counter" id="f3-1">0</span><br><small>4 times and more</small></td>
+                        <td><span class="counter" id="f3-2">0</span><br><small>3 to below 4</small></td>
+                        <td><span class="counter" id="f3-3">0</span><br><small>2 to below 3</small></td>
+                        <td><span class="counter" id="f3-4">0</span><br><small>above 0 to below 2</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><strong>C. Efficiency</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1. What is the Cooperative's percentage range of the Delinquency Rate for the previous financial reporting period?</td>
+                        <td><span class="counter" id="f4-1">0</span><br><small>5% and below</small></td>
+                        <td><span class="counter" id="f4-2">0</span><br><small>above 5% to 10%</small></td>
+                        <td><span class="counter" id="f4-3">0</span><br><small>above 10% to 15%</small></td>
+                        <td><span class="counter" id="f4-4">0</span><br><small>above 15% to 20%</small></td>
+                    </tr>
+                    <tr>
+                        <td>2. What is the Cooperative's percentage range on their Adequcy of Provisioning of APLL (over 12 months past due).</td>
+                        <td><span class="counter" id="f5-1">0</span><br><small>100%</small></td>
+                        <td><span class="counter" id="f5-2">0</span><br><small>80% to less than 100%</small></td>
+                        <td><span class="counter" id="f5-3">0</span><br><small>60% to less than 80%</small></td>
+                        <td><span class="counter" id="f5-4">0</span><br><small>35% to less than 60%</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><strong>D. Profitability</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1. What is the Cooperative's percentage range of the Return on Assets (ROA) for the previous financial reporting period?</td>
+                        <td><span class="counter" id="f6-1">0</span><br><small>20% and above</small></td>
+                        <td><span class="counter" id="f6-2">0</span><br><small>15% to below 20%</small></td>
+                        <td><span class="counter" id="f6-3">0</span><br><small>10% to below 15%</small></td>
+                        <td><span class="counter" id="f6-4">0</span><br><small>5% to below 10%</small></td>
+                    </tr>
+                    <tr>
+                        <td>2. What is the Cooperative's percentage range of the Rate of Net Surplus for the previous financial reporting period?</td>
+                        <td><span class="counter" id="f7-1">0</span><br><small>30% and above</small></td>
+                        <td><span class="counter" id="f7-2">0</span><br><small>25% to below 30%</small></td>
+                        <td><span class="counter" id="f7-3">0</span><br><small>10% to below 25%</small></td>
+                        <td><span class="counter" id="f7-4">0</span><br><small>5% to below 10%</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><strong>E. Structures of Assets</strong></td>
+                    </tr>
+                    <tr>
+                        <td>1. What is the Cooperative's Percentage of Investments for the previous financial reporting period?</td>
+                        <td><span class="counter" id="f8-1">0</span><br><small>0% to 5%</small></td>
+                        <td><span class="counter" id="f8-2">0</span><br><small>above 5% to 10%</small></td>
+                        <td><span class="counter" id="f8-3">0</span><br><small>above 10% to 15%</small></td>
+                        <td><span class="counter" id="f8-4">0</span><br><small>above 15% to 20%</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

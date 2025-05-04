@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.table-container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 800px; /* Prevent table from becoming too narrow */
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+thead {
+    background: #34495e;
+    color: white;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Center align cells containing counters */
+td:not(:first-child) {
+    text-align: center;
+}
+
+th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tbody tr:hover {
+    background: #f8f9fa;
+}
+
+td[colspan="5"] {
+    background: #3498db;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.counter {
+    display: inline-block;
+    min-width: 60px;
+    padding: 0.5rem 1rem;
+    background: #ecf0f1;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.counter:hover {
+    background: #3498db;
+    color: white;
+}
+
+.question-col {
+    width: 50%;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.percentage-input {
+    width: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.percentage-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52,152,219,0.2);
+}
+
+#financial-table td:last-child {
+    text-align: center;
+}
+
+#financial-table td {
+    vertical-align: top;
+    text-align: center;
+}
+
+#financial-table td:first-child {
+    text-align: left;
+}
+
+#financial-table small {
+    display: block;
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    line-height: 1.2;
+}
+
+#financial-table .counter {
+    margin-bottom: 0.3rem;
+}
+
+/* Desktop (1200px and up) */
+@media screen and (min-width: 1200px) {
+    .table-container {
+        padding: 0 40px;
+    }
+
+    .question-col {
+        width: 45%;
+    }
+
+    th, td {
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Laptop (992px to 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .table-container {
+        padding: 0 30px;
+    }
+
+    .question-col {
+        width: 40%;
+    }
+
+    th, td {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablet Landscape (768px to 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .table-container {
+        padding: 0 20px;
+    }
+
+    .question-col {
+        width: 35%;
+    }
+
+    th, td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    small {
+        font-size: 0.75rem;
+    }
+}
+
+/* Tablet Portrait (600px to 767px) */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .table-container {
+        padding: 0 15px;
+    }
+
+    .question-col {
+        width: 35%;
+    }
+
+    th, td {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    small {
+        font-size: 0.7rem;
+    }
+
+    .counter {
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Shared styles for better scrolling on tablets */
+@media screen and (max-width: 991px) {
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 1rem auto;
+    }
+
+    table {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .question-col {
+        width: 40%;
+    }
+}
