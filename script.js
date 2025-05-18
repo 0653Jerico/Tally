@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    function updateTotal(element) {
+        const row = element.closest('tr');
+        const counters = row.querySelectorAll('.counter');
+        const total = Array.from(counters).reduce((sum, counter) => sum + parseInt(counter.textContent), 0);
+        const totalElement = row.querySelector('.total');
+        if (totalElement) {
+            totalElement.textContent = total;
+        }
+    }
+
     function setupTableInteractions(table) {
         let touchTimer = null;
         let touchTarget = null;
@@ -17,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const currentValue = parseInt(touchTarget.textContent);
                     if (currentValue > 0) {
                         touchTarget.textContent = currentValue - 1;
+                        updateTotal(touchTarget);
                     }
                     touchTarget = null;
                 }, 500);
@@ -29,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (touchTarget) {
                     const currentValue = parseInt(touchTarget.textContent);
                     touchTarget.textContent = currentValue + 1;
+                    updateTotal(touchTarget);
                 }
             }
             touchTarget = null;
@@ -46,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         e.target.textContent = currentValue - 1;
                     }
                 }
+                updateTotal(e.target);
             }
         });
     }
